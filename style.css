@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Notable', sans-serif;
+}
+.container{
+    margin: 0 auto;/*центрируем его*/
+    max-width: 934px;
+}
+.header .container{
+    padding: 44px 0 0 30px;
+}
+.header{
+    background-image: url("img/coffee.jpg");
+}
+.nav{
+    text-align: right;
+}
+.menu{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;/*Выставляем родителю значение в ноль*/
+    margin-right: 13px;
+}
+.menu > li{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;/*Возвращаем в нормальное состояние у потомков*/
+    margin-left: 1px;
+    position: relative;
+
+}
+.menu > li >a{
+    color: beige;
+    text-decoration: none;
+    width: 132px;
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid beige;
+    background-color: chocolate;
+    margin-top: 5px;
+    cursor: pointer;
+    }
+.menu > li >a:hover{
+    font-size: 12px;
+    text-transform:uppercase;
+    font-style: italic;
+    background: orange;
+}
+.subnav{
+position: absolute;
+top:100%;
+left: 0;
+width: 172px;
+background: orange;
+padding-top: 6px;
+display: none;
+}
+.subnav li{
+    list-style-type:none;
+}
+.subnav a{
+color: beige;
+text-align:left;
+display: block;
+font-size: 11px;
+text-decoration: none;
+height: 25px;
+padding-top: 7px;
+cursor: pointer;
+padding: 0 8px;
+box-sizing: border-box;
+}
+.subnav a:hover{
+    font-size: 14px;
+    background-color: chocolate;
+}
+.menu > li:hover .subnav{
+    display: block;
+}
+.menu > li:last-of-type .subnav{/*Для того, чтобы последнее меню было в другую сторону*/
+    left: auto;
+    right: 0;
+}
+.main{
+background-color: chocolate;
+}
+.main .container{
+border: 1px solid beige;
+border-radius: 7px;
+background-image: url("img/list.jpg");
+width: 934px;
+height:625px;
+background-position: center;
+background-size: cover;
+
+
+}
+.head{
+color: darkred;
+    font-size: 60px;
+    text-align: center;
+}
+.btn{
+font-size: 13px;
+text-decoration: none;
+color: beige;
+background-color: darkred;
+cursor: pointer;
+border: 1px solid beige;
+border-radius: 5px;
+line-height: 300px;
+padding-left: 11px;
+padding-right: 11px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: 760px;
+}
+.button{
+font-size: 13px;
+text-decoration: none;
+color: beige;
+background-color: darkred;
+cursor: pointer;
+border: 1px solid beige;
+border-radius: 5px;
+padding-left: 11px;
+padding-right: 11px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.about_img{
+    border-radius: 5px;
+    border: 1px solid darkred;
+    display: block;
+    margin: 0 auto;/*Выравниваем картинку по центру*/
+    box-sizing: border-box;
+
+}
+.about_title{
+    color: darkred;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center ;
+
+}
+.about{
+    background-color: beige;
+    padding: 12px 0 20px;
+}
+.about .container{
+
+}
+.about_item{
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    border: 1px solid darkred;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-left: 6px;
+
+
+}
+.button{
+display: inline-block;
+margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+/*Footer*/
+.footer{
+    background-image: url("img/coffee.jpg");
+    padding: 17px 0 18px;
+    border-top: 1px solid white;
+}
+
+.footer_icon a{
+    display: inline-block;
+    cursor: pointer;
+    float:left;
+}
+.footer_nav{
+    padding-right: 40px;
+
+}
+.footer_nav li{
+    font-size: 14px;
+    color: beige;
+    list-style-type:none;/*Убираем маркированный список*/
+}
+.footer_nav a{
+    float: right;
+    color: white;
+    display: block;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+.facebook_img{
+    padding-right:1px;
+    padding-top: 5px;
+}
+.twitter_img{
+    padding-right: 1px;
+    padding-top: 5px;
+}
+.youtube_img {
+    padding-right: 6px;
+    padding-top: 3px;
+}
+.instagram_img{
+    padding-right: 9px;
+    padding-top: 10px;
+}
+.email{
+    padding-top: 7px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ul.footer_nav > li > a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+ul.footer_nav > li > a:hover{
+text-decoration: underline;
+}
